@@ -1,0 +1,130 @@
+<! html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Automotive Passion Hub</title>
+    <style>
+        /* General Body Styling - Background adjusted for car theme */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Dark, metallic-like gradient for a sophisticated car theme */
+            background: linear-gradient(135deg, rgb(30, 30, 30) 0%, rgb(60, 60, 60) 100%);
+            color: rgb(240, 240, 240); /* Lighter text for dark background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            /* Removed overflow-x: hidden as no animations now */
+        }
+
+        /* Header Styling */
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 200, 0); /* Bright amber/gold for contrast */
+            font-size: 3.5em; /* Larger heading */
+            margin-bottom: 25px;
+            text-shadow: 2px 3px 5px rgb(0, 0, 0, 0.4); /* Stronger shadow for pop */
+            letter-spacing: 1px; /* Slight letter spacing */
+            /* Removed animation properties */
+            opacity: 1; /* Ensure visible */
+        }
+
+        /* Paragraph Styling (Emotional Lines) */
+        p {
+            font-size: 1.3em; /* Slightly larger paragraph */
+            margin-bottom: 50px;
+            max-width: 850px; /* Wider paragraph for better readability */
+            line-height: 1.7;
+            color: rgb(200, 200, 200); /* Softer light gray */
+            font-weight: normal; /* Default font weight */
+            padding: 0 20px; /* Add some padding on sides for smaller screens */
+            /* Removed animation properties */
+            opacity: 1; /* Ensure visible */
+        }
+
+        /* Button Container Styling */
+        .button-container {
+            display: flex;
+            gap: 30px; /* More space between buttons */
+            margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Button Styling */
+        .button-container button {
+            background-color: rgb(0, 100, 180); /* Steel blue for buttons */
+            color: rgb(255, 255, 255); /* White text */
+            padding: 18px 35px; /* Larger padding for bigger buttons */
+            border: 2px solid rgb(0, 70, 150); /* Darker blue border */
+            border-radius: 10px; /* More rounded corners */
+            font-size: 1.2em; /* Larger font in buttons */
+            font-weight: 600; /* Bolder text */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgb(0, 0, 0, 0.5); /* Stronger shadow */
+            text-decoration: none;
+            display: inline-block;
+            /* Removed all animation properties */
+        }
+
+        .button-container button:hover {
+            background-color: rgb(0, 70, 150); /* Darker blue on hover */
+            transform: translateY(-5px); /* More pronounced lift */
+            box-shadow: 0 10px 20px rgb(0, 0, 0, 0.7); /* Even stronger shadow on hover */
+        }
+
+        .button-container button:active {
+            background-color: rgb(0, 50, 120); /* Even darker on click */
+            transform: translateY(0); /* Reset lift on click */
+            box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3); /* Reset shadow on click */
+        }
+
+        /* Link inside button styling */
+        .button-container button a {
+            color: inherit; /* Inherit text color from the button */
+            text-decoration: none; /* Remove underline from the link */
+            display: block; /* Make the link fill the button area */
+            line-height: 1; /* Adjust line height if needed */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .button-container {
+                flex-direction: column; /* Stack buttons vertically on small screens */
+                gap: 15px;
+            }
+            .button-container button {
+                width: 80%; /* Make buttons wider */
+                padding: 15px 20px;
+            }
+            .button-container button a {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to car chunia, Fellow Automotive Enthusiast!</h1>
+    <p>
+        The symphony of an engine's roar, the exhilarating embrace of acceleration, the timeless beauty of design – for those who truly understand, a car is far more than just transportation. It's a living sculpture of power and precision, a personal statement on wheels, and the ultimate key to unlocking boundless freedom on the open road. Immerse yourself in the world where passion drives performance!
+   <br> • For more information click following button 
+    </p>
+    <div class="button-container">
+        <button><a href="https://m-khizar-hayyat.github.io/sportscars/">Sports Cars</a></button>
+        <button><a href="https://m-khizar-hayyat.github.io/Muscle-cars/">Muscle Cars</a></button>
+        <button><a href="https://m-khizar-hayyat.github.io/Off-road/">Off-Road Cars</a></button>
+    </div>
+</body>
+</html>
